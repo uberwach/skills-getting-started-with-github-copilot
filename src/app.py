@@ -20,6 +20,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
 # In-memory activity database
+
 activities = {
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
@@ -43,7 +44,7 @@ activities = {
     "Soccer Team": {
         "description": "Join the school soccer team and compete in local leagues",
         "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
-        "max_participants": 22,
+        "max_participants": 18,
         "participants": ["lucas@mergington.edu", "mia@mergington.edu"]
     },
     "Basketball Club": {
@@ -53,30 +54,30 @@ activities = {
         "participants": ["liam@mergington.edu", "ava@mergington.edu"]
     },
     # Artistic activities
-    "Art Club": {
-        "description": "Explore painting, drawing, and other visual arts",
-        "schedule": "Mondays, 3:30 PM - 5:00 PM",
-        "max_participants": 18,
-        "participants": ["ella@mergington.edu", "jack@mergington.edu"]
-    },
-    "Drama Society": {
-        "description": "Participate in theater productions and acting workshops",
-        "schedule": "Thursdays, 4:00 PM - 5:30 PM",
+    "Drama Club": {
+        "description": "Act, direct, and participate in school theater productions",
+        "schedule": "Mondays, 4:00 PM - 5:30 PM",
         "max_participants": 25,
-        "participants": ["noah@mergington.edu", "grace@mergington.edu"]
+        "participants": ["noah@mergington.edu", "isabella@mergington.edu"]
+    },
+    "Art Workshop": {
+        "description": "Explore painting, drawing, and sculpture techniques",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["amelia@mergington.edu", "benjamin@mergington.edu"]
     },
     # Intellectual activities
     "Math Olympiad": {
         "description": "Prepare for math competitions and solve challenging problems",
         "schedule": "Fridays, 2:00 PM - 3:30 PM",
-        "max_participants": 16,
-        "participants": ["ben@mergington.edu", "lucy@mergington.edu"]
+        "max_participants": 15,
+        "participants": ["charlotte@mergington.edu", "elijah@mergington.edu"]
     },
-    "Debate Club": {
-        "description": "Develop public speaking and argumentation skills",
-        "schedule": "Wednesdays, 4:00 PM - 5:30 PM",
+    "Science Club": {
+        "description": "Conduct experiments and explore scientific concepts",
+        "schedule": "Wednesdays, 4:00 PM - 5:00 PM",
         "max_participants": 20,
-        "participants": ["ethan@mergington.edu", "zoe@mergington.edu"]
+        "participants": ["harper@mergington.edu", "jackson@mergington.edu"]
     }
 }
 
